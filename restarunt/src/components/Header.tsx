@@ -12,25 +12,40 @@ const Header = () => {
 
         {/* Navigation & Contact */}
         <nav className="flex flex-wrap items-center justify-center gap-6 text-xs font-bold tracking-wider uppercase lg:gap-8">
-          <Link href="#" className="transition-colors hover:text-gray-300">
+          <Link href="/" className="transition-colors hover:text-gray-300">
             Home
           </Link>
-          <Link href="#" className="transition-colors hover:text-gray-300">
+          <Link
+            href="/services"
+            className="transition-colors hover:text-gray-300"
+          >
             Services
           </Link>
-          <Link href="#" className="transition-colors hover:text-gray-300">
+          <Link href="/menu" className="transition-colors hover:text-gray-300">
             Menu
           </Link>
-          <Link href="#" className="transition-colors hover:text-gray-300">
+          <Link
+            href="/gallery"
+            className="transition-colors hover:text-gray-300"
+          >
             Gallery
           </Link>
-          <Link href="#" className="transition-colors hover:text-gray-300">
+          <Link
+            href="/reviews"
+            className="transition-colors hover:text-gray-300"
+          >
             Reviews
           </Link>
-          <Link href="#" className="transition-colors hover:text-gray-300">
+          <Link
+            href="/coupons"
+            className="transition-colors hover:text-gray-300"
+          >
             Coupons
           </Link>
-          <Link href="#" className="transition-colors hover:text-gray-300">
+          <Link
+            href="/contact-us"
+            className="transition-colors hover:text-gray-300"
+          >
             Contact Us
           </Link>
           <span className="font-normal tracking-normal">(800) 800-0000</span>

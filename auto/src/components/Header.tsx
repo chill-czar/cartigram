@@ -29,22 +29,22 @@ export default function AutoShopHeader() {
 
           <div className="flex items-center gap-8 text-[16px] font-bold tracking-wider text-white uppercase">
             <nav className="flex items-center gap-4">
-              <Link href="#" className="hover:text-gray-300">
+              <Link href="/" className="hover:text-gray-300">
                 Home
               </Link>
-              <Link href="#" className="hover:text-gray-300">
+              <Link href="/services" className="hover:text-gray-300">
                 Services
               </Link>
-              <Link href="#" className="hover:text-gray-300">
+              <Link href="/gallery" className="hover:text-gray-300">
                 Gallery
               </Link>
-              <Link href="#" className="hover:text-gray-300">
+              <Link href="/reviews" className="hover:text-gray-300">
                 Reviews
               </Link>
-              <Link href="#" className="hover:text-gray-300">
+              <Link href="/coupons" className="hover:text-gray-300">
                 Coupons
               </Link>
-              <Link href="#" className="hover:text-gray-300">
+              <Link href="/contact" className="hover:text-gray-300">
                 Contact Us
               </Link>
             </nav>

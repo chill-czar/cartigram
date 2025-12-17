@@ -1,7 +1,11 @@
 import "~/styles/globals.css";
 
 import { type Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Montserrat, Lato } from "next/font/google";
+
+import { TopBar } from "~/components/TopBar";
+import { Header } from "~/components/Header";
+import { Footer } from "~/components/Footer";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -9,17 +13,29 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-const geist = Geist({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-montserrat",
+  weight: ["400", "700"],
+});
+
+const lato = Lato({
+  subsets: ["latin"],
+  variable: "--font-lato",
+  weight: ["400", "700"],
 });
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${geist.variable}`}>
-      <body>{children}</body>
+    <html lang="en" className={`${montserrat.variable} ${lato.variable}`}>
+      <body className="font-secondary">
+        <TopBar />
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
